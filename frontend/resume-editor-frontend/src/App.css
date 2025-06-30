@@ -67,7 +67,7 @@ body {
   border-radius: 4px;
 }
 
-/* Editor Area */
+
 .editor-area {
   flex: 1;
   padding: 2rem;
@@ -80,13 +80,13 @@ body {
   overflow-x: hidden;
 }
 
-/* Remove container styles */
+
 .container {
   width: 100%;
   padding: 2rem;
 }
 
-/* Make section full screen width and clean */
+
 .section-card {
   background: transparent;
   padding: 2rem 0;
@@ -103,7 +103,7 @@ body {
 .section-card input,
 .section-card textarea {
   width: 100%;
-  padding: 1rem 0.75rem; /* Increased padding for more height */
+  padding: 1rem 0.75rem;
   margin-bottom: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -129,7 +129,7 @@ padding: 14px 28px;
   background: #5849c4;
 }
 
-/* Button group styling */
+
 .button-group {
   display: flex;
   justify-content: center;
@@ -143,8 +143,8 @@ padding: 14px 28px;
   font-size: 20px;
   padding: 14px 28px;
   border: none;
-  border-radius: 14px;       /* Slightly larger corners */
-        /* Bigger text */
+  border-radius: 14px;       
+       
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s ease;
@@ -162,7 +162,7 @@ padding: 14px 28px;
   text-align: center;
 }
 
-/* Header section input layout */
+
 .input-row {
   display: flex;
   flex-wrap: wrap;
@@ -183,13 +183,13 @@ padding: 14px 28px;
 }
 
 .small-input {
-  flex: 0 0 10px;  /* Fixed width: don't stretch */
+  flex: 0 0 10px;  
 }
 
 .next-button-fixed {
   position: fixed;
   bottom: 2rem;
-  right: 10rem; /* ⬅️ Increase from 2rem to 4rem */
+  right: 10rem; 
 }
 
 
@@ -232,7 +232,6 @@ padding: 14px 28px;
   background-color: #5849c4;
 }
 
-/* Stepper Sidebar Design */
 .stepper-sidebar {
   align-items: center;
 }
@@ -285,12 +284,12 @@ padding: 14px 28px;
   margin-top: 0.5rem;
 }
 .resume-title {
-  font-size: 3rem;         /* Bigger font size */
-  font-weight: bold;       /* Bold text */
-  color: #333366;          /* Deep bluish color */
-  text-align: center;      /* Center it horizontally */
-  margin-bottom: 2rem;     /* Space below */
-  font-family: 'Segoe UI', sans-serif; /* Optional: consistent font */
+  font-size: 3rem;         
+  font-weight: bold;      
+  color: #333366;          
+  text-align: center;      
+  margin-bottom: 2rem;    
+  font-family: 'Segoe UI', sans-serif; 
   text-align: left;
 }
 
@@ -310,9 +309,9 @@ padding: 14px 28px;
 
 .navigation-buttons {
   display: flex;
-  justify-content: center; /* Center horizontally */
+  justify-content: center; 
   align-items: center;
-  gap: 2rem; /* Space between buttons */
+  gap: 2rem; 
   margin-top: 3rem;
 }
 
@@ -363,9 +362,9 @@ padding: 14px 28px;
 
 .button-nav-row {
   display: flex;
-  flex-direction: row; /* ✅ buttons in one line */
-  justify-content: center; /* center align them */
-  gap: 2rem; /* space between buttons */
+  flex-direction: row; 
+  justify-content: center; 
+  gap: 2rem;
   margin-top: 2rem;
 }
 
@@ -425,8 +424,8 @@ padding: 14px 28px;
   font-size: 1rem;
 }
 .next-btn {
-  margin-right: auto;         /* pushes it left if inside a flexbox */
-  margin-left: 2rem;          /* adjust this to move it more */
+  margin-right: auto;         
+  margin-left: 2rem;         
 }
 
 .button-bottom-row {
