@@ -107,7 +107,7 @@ body {
   margin-bottom: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 20px;
   resize: vertical;
 }
 
@@ -120,6 +120,9 @@ body {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 20px;
+padding: 14px 28px;
+
 }
 
 .section-card button:hover {
@@ -137,10 +140,11 @@ body {
 .button-group button {
   background: #6a5acd;
   color: white;
-  padding: 1rem 2.5rem;      /* Increased padding for bigger size */
+  font-size: 20px;
+  padding: 14px 28px;
   border: none;
   border-radius: 14px;       /* Slightly larger corners */
-  font-size: 1.30rem;        /* Bigger text */
+        /* Bigger text */
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s ease;
@@ -162,17 +166,14 @@ body {
 .input-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3.5rem;
   margin-bottom: 2rem;
 }
 
 .input-group {
-  flex: 1;
-  min-width: 220px;
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  padding-right: 0.5rem;
+  flex: 0 0 48%;
+  max-width: 20%;
+  min-width: 200px;
 }
 
 .input-group label {
@@ -195,10 +196,10 @@ body {
 .next-button-fixed button {
   background: #6a5acd;
   color: white;
-  padding: 0.7rem 1.5rem;
+  font-size: 20px;
+  padding: 14px 28px;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -216,9 +217,9 @@ body {
 }
 
 .next-button-fixed button {
-  padding: 1rem 2.5rem;
-  font-size: 1.25rem;
-  border-radius: 10px;
+  font-size: 20px;
+  padding: 14px 28px;
+ border-radius: 10px;
   background-color: #6a5acd;
   color: white;
   border: none;
@@ -291,4 +292,185 @@ body {
   margin-bottom: 2rem;     /* Space below */
   font-family: 'Segoe UI', sans-serif; /* Optional: consistent font */
   text-align: left;
+}
+
+.summary-textarea {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 180px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  gap: 2rem; /* Space between buttons */
+  margin-top: 3rem;
+}
+
+.navigation-buttons .back-btn,
+.navigation-buttons .next-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #7a5ef8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-buttons .back-btn:hover,
+.navigation-buttons .next-btn:hover {
+  background-color: #5a45d6;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 4rem;
+  margin-top: 1.5rem;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.button-nav-row {
+  display: flex;
+  flex-direction: row; /* ✅ buttons in one line */
+  justify-content: center; /* center align them */
+  gap: 2rem; /* space between buttons */
+  margin-top: 2rem;
+}
+
+
+
+.button-nav-row button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #6a5acd;
+  color: white;
+
+}
+
+.two-column-row {
+  display: flex;
+  gap: 3.5rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.two-column-row .input-group {
+  flex: 1;
+  min-width: 250px;
+}
+.two-column-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.section-card label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+.section-card input[type="text"],
+.section-card input[type="month"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.next-btn {
+  margin-right: auto;         /* pushes it left if inside a flexbox */
+  margin-left: 2rem;          /* adjust this to move it more */
+}
+
+.button-bottom-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.btn.big-btn {
+  background-color: #7c4dff;
+  color: white;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.big-btn:hover {
+  background-color: #5e35b1;
+}
+
+.big-button-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.big-btn {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 14px 28px;
+  background-color: #7c4dff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.big-btn:hover {
+  background-color: #5e35b1;
 }
